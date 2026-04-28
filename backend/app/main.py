@@ -9,7 +9,7 @@ app = FastAPI(title="BiasGuard AI Backend 🚀")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://your-frontend.vercel.app",  # 🔥 replace later
+    "https://bias-guard-8xxoda2gs-ishika-gagnejas-projects.vercel.app/",  # 🔥 replace later
 ]
 
 app.add_middleware(
@@ -32,5 +32,5 @@ def root():
 # ✅ IMPORTANT FOR RAILWAY
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.environ.get("PORT", 8000))  # 🔥 dynamic port
+    port = int(os.environ.get("PORT", 10000))  # 🔥 dynamic port
     uvicorn.run("app.main:app", host="0.0.0.0", port=port)
