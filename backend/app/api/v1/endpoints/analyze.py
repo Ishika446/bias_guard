@@ -19,4 +19,4 @@ def analyze_idea(request: IdeaRequest):
     except Exception as e:
         print(f"[MongoDB] save_query failed: {e}")
 
-    return result
+    return result
