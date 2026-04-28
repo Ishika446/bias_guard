@@ -9,7 +9,7 @@ app = FastAPI(title="BiasGuard AI Backend 🚀")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://bias-guard-8xxoda2gs-ishika-gagnejas-projects.vercel.app/",  # 🔥 replace later
+    "https://bias-guard-8xxoda2gs-ishika-gagnejas-projects.vercel.app",  
 ]
 
 app.add_middleware(
