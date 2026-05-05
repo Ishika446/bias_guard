@@ -1,4 +1,4 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const API_BASE = https://bias-guard.onrender.com;
 
 export async function analyzeIdea(idea, userEmail = null) {
   const res = await fetch(`${API_BASE}/api/v1/analyze/`, {
@@ -16,4 +16,4 @@ export async function analyzeIdea(idea, userEmail = null) {
 
   return await res.json();
 }
-
+
