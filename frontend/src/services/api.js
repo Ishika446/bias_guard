@@ -1,4 +1,4 @@
-const API_BASE = "https://bias-guard.onrender.com";
+const API_BASE = https://bias-guard.onrender.com;
 
 export async function analyzeIdea(idea, userEmail = null) {
   const res = await fetch(`${API_BASE}/api/v1/analyze/`, {
@@ -6,10 +6,7 @@ export async function analyzeIdea(idea, userEmail = null) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      idea,
-      user_email: userEmail,
-    }),
+    body: JSON.stringify({ idea, user_email: userEmail }),
   });
 
   if (!res.ok) {
